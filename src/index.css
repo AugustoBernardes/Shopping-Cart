@@ -1,0 +1,118 @@
+body{
+    font-family:Helvetica ,Arial,  sans-serif;
+}
+
+h1,h2,h3{
+  margin: 0.5rem 0;
+}
+
+h1{
+  font-size: 1.5rem;
+}
+
+h2{
+  font-size: 1.2rem;
+}
+
+h3{
+  font-size: 1rem;
+}
+a{
+  text-decoration: none;
+}
+
+.row-flex{
+  display: flex;
+  justify-content: space-between;
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+}
+.col-1{
+  flex:1
+}
+
+.col-2{
+  flex: 2;
+}
+
+.block{
+  background-color: #e0e0e0;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.row.center{
+  align-items: center;
+}
+
+img.small{
+  max-height: 8rem;
+}
+
+button{
+  font-size: 0.8rem;
+  padding: 0.2;
+  margin: 0.1rem;
+  border-radius: 0.5rem;
+  border: 0.1rem #404040 solid;
+  background-color: #f0c040;
+  width: 100%;
+    cursor: pointer;
+}
+
+button.add{
+  background-color: #40c0f0;
+  width: 1.5rem;
+}
+
+button.badge{
+  background-color: #f04040;
+  color: #ffffff;
+  width: 1.5rem;
+}
+
+.text-right{
+  text-align: center;
+}
+
+.img-card{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.item-cart{
+  text-align: center;
+}
+
+.submit-card{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.submit-container{
+  display: flex;
+  justify-content: center;
+  
+}
+
+@media only screen and (max-width: 870px) {
+  .row-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .button-add{
+    margin-bottom: 50px;
+  }
+
+}
