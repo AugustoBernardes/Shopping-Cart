@@ -5,6 +5,7 @@
 This app is a simple shopping cart i didn't focused in style just if would work and it's working.
 
 First- This app get the products and add on your shopping cart , after calculate all the values like shipping.
+To check the app just follow the [link](https://my-shopping-carts.netlify.app)
 
 # Data
 
