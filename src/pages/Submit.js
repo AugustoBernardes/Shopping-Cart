@@ -36,7 +36,7 @@ export default function Submit() {
     return (
         <div className='submit-container'> 
             <div className='block'>
-                  <h1>teste<h1>
+                  <h1>teste</h1>
             </div>
             <table className='block submit-card'>
                 <tr>
