@@ -23,6 +23,8 @@ export default function Submit() {
         // Items        
         let totalProducts = localStorage.getItem('totalProducts')
         let totalPrice = localStorage.getItem('totalPrice')
+        console.log(totalProducts)
+        console.log(totalPrice)
          
         if(name != '' && phone != '' && email != '' && adress != ''){
             if(validateEmail(email) === false){
@@ -38,6 +40,7 @@ export default function Submit() {
                 let product = {
                     price:JSON.parse(totalPrice),
                     products:JSON.parse(totalProducts),
+              
                 }
                 localStorage.setItem('customerData', JSON.stringify(client))
                 localStorage.setItem('productData', JSON.stringify(product))      
