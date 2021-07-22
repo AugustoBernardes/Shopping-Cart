@@ -11,7 +11,10 @@ export default function Submit() {
 
     function homePage(){
         let name = document.getElementById("inputName").value
-        console.log(name)
+        let phone = document.getElementById("inputPhone").value
+        let email = document.getElementById("inputEmail").value
+        let adress = document.getElementById("inputAdress").value
+        console.log(name,phone,email,adress)
         alert('Compra confirmada!')
         history.push('/')
     }
@@ -39,7 +42,10 @@ export default function Submit() {
         <div className='submit-container'> 
               <div class="block submit-card">
                    <h1>Cadastro do cliente</h1>
-                   <input  id="inputName" type="text" placeholder="name"/>
+                   <input  id="inputName" type="text" placeholder="Nome"/>
+                   <input  id="inputPhone" type="number" placeholder="Telephone"/>
+                   <input  id="inputEmail" type="email" placeholder="E-mail"/>
+                   <input  id="inputAdress" type="text" placeholder="Endereço"/>
               </div>
             <table className='block submit-card'>
                 <tr>
