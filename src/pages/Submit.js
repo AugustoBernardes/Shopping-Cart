@@ -8,15 +8,46 @@ export default function Submit() {
     let [totalPrice, setPrice] = useState([])
     let [totalQty, setQty] = useState([])
     let [totalProducts, setProduct] = useState([])
+    // Validating E-mail
+    function validateEmail(email) {
+        var re = /\S+@\S+\.\S+/;
+        return re.test(email);
+    }
 
     function homePage(){
+        // Customer        
         let name = document.getElementById("inputName").value
         let phone = document.getElementById("inputPhone").value
         let email = document.getElementById("inputEmail").value
         let adress = document.getElementById("inputAdress").value
-        console.log(name,phone,email,adress)
-        alert('Compra confirmada!')
-        history.push('/')
+        // Items        
+        let totalProducts = localStorage.getItem('totalProducts')
+        let totalPrice = localStorage.getItem('totalPrice')
+            totalPrice = JSON.parse(totalPrice)
+            totalProducts = JSON.parse(totalProducts)
+        if(name != '' && phone != '' && email != '' && adress != ''){
+            if(validateEmail(email) === false){
+                return alert('Coloque um email valido como: augusto@gmail.com')
+            }else{
+                let client = {
+                   name:name,
+                   phone:phone,
+                   email:email,
+                   adress:adress,
+                }
+
+                let product = {
+                    price:totalPrice,
+                    products:totalProducts
+                }
+                localStorage.setItem('customerData', client)
+                localStorage.setItem('productData', product)      
+
+                console.log(name,phone,email,adress)
+                alert('Compra confirmada!')
+                history.push('/')
+            }
+        }
     }
     
     useEffect(() => {
