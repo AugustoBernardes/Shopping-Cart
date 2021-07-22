@@ -47,6 +47,8 @@ export default function Submit() {
                 alert('Compra confirmada!')
                 history.push('/')
             }
+        }else{
+            return alert('Responda todos os campos !')
         }
     }
     
