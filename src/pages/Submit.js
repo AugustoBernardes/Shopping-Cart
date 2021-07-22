@@ -45,7 +45,6 @@ export default function Submit() {
                 localStorage.setItem('customerData', JSON.stringify(client))
                 localStorage.setItem('productData', JSON.stringify(product))      
 
-                console.log(name,phone,email,adress)
                 alert('Compra confirmada!')
                 history.push('/')
             }
@@ -67,7 +66,7 @@ export default function Submit() {
             setPrice(totalPrice)
             setProduct(totalProducts)
             setQty(totalQty)
-            localStorage.clear()
+        // localStorage.clear()
         }else{
             history.push('/')
         }
