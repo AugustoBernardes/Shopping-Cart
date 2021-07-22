@@ -15,16 +15,11 @@ export default function Submit() {
     }
 
     function homePage(){
-        // Customer        
+        // Customer  Data      
         let name = document.getElementById("inputName").value
         let phone = document.getElementById("inputPhone").value
         let email = document.getElementById("inputEmail").value
         let adress = document.getElementById("inputAdress").value
-        // Items        
-        let totalProducts = localStorage.getItem('totalProducts')
-        let totalPrice = localStorage.getItem('totalPrice')
-        console.log(totalProducts)
-        console.log(totalPrice)
          
         if(name != '' && phone != '' && email != '' && adress != ''){
             if(validateEmail(email) === false){
@@ -37,13 +32,7 @@ export default function Submit() {
                    adress:adress,
                 }
 
-                let product = {
-                    price:JSON.parse(totalPrice),
-                    products:JSON.parse(totalProducts),
-              
-                }
-                localStorage.setItem('customerData', JSON.stringify(client))
-                localStorage.setItem('productData', JSON.stringify(product))      
+                localStorage.setItem('customerData', JSON.stringify(client))    
 
                 alert('Compra confirmada!')
                 history.push('/')
