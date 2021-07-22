@@ -64,7 +64,7 @@ export default function Submit() {
     return (
         <div className='submit-container'> 
               <div class="block submit-card">
-                   <h1>Cadastro do cliente</h1>
+                   <h1 className='container-title'>Cadastro do cliente</h1>
           
                    <h3>Nome</h3>
                    <input  id="inputName" type="text" placeholder="Nome"/>
