@@ -97,6 +97,14 @@ button.badge{
   align-items: center;
 }
 
+.container-title{
+    border-radius: 5px;
+    background-color: #a59c9c;
+    padding: 4px;
+    box-shadow: 3px 3px 3px black;
+}
+
+
 
 .submit-container{
   display: flex;
