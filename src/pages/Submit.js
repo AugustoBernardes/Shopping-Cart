@@ -40,7 +40,7 @@ export default function Submit() {
                     products:totalProducts
                 }
                 localStorage.setItem('customerData', JSON.stringify(client))
-                localStorage.setItem('productData', product)      
+                localStorage.setItem('productData', JSON.stringify(product))      
 
                 console.log(name,phone,email,adress)
                 alert('Compra confirmada!')
