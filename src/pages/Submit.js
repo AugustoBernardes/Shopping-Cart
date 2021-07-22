@@ -10,6 +10,8 @@ export default function Submit() {
     let [totalProducts, setProduct] = useState([])
 
     function homePage(){
+        let name = document.getElementById("inputName").value
+        console.log(name)
         alert('Compra confirmada!')
         history.push('/')
     }
@@ -37,7 +39,7 @@ export default function Submit() {
         <div className='submit-container'> 
               <div class="block submit-card">
                    <h1>Cadastro do cliente</h1>
-                   <input type="text" placeholder="name"/>
+                   <input  id="inputName" type="text" placeholder="name"/>
               </div>
             <table className='block submit-card'>
                 <tr>
