@@ -65,10 +65,14 @@ export default function Submit() {
         <div className='submit-container'> 
               <div class="block submit-card">
                    <h1>Cadastro do cliente</h1>
-                   <hr></hr>
+          
+                   <h3>Nome</h3>
                    <input  id="inputName" type="text" placeholder="Nome"/>
-                   <input  id="inputPhone" type="number" placeholder="Telephone"/>
+                    <h3>Telefone</h3>
+                   <input  id="inputPhone" type="number" placeholder="Telefone"/>
+                    <h3>E-mail</h3>
                    <input  id="inputEmail" type="email" placeholder="E-mail"/>
+                    <h3>Endereço</h3>
                    <input  id="inputAdress" type="text" placeholder="Endereço"/>
               </div>
             <table className='block submit-card'>
