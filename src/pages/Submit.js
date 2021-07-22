@@ -35,8 +35,10 @@ export default function Submit() {
 
     return (
         <div className='submit-container'> 
-             <div class="block">
+             <div class="block submit-card">
                    <h1>Cadastro do cliente</h1>
+                   <input type="text" placeholder="name">
+                    
             </div>
             <table className='block submit-card'>
                 <tr>
