@@ -36,8 +36,8 @@ export default function Submit() {
                 }
 
                 let product = {
-                    price:totalPrice,
-                    products:totalProducts
+                    price:JSON.parse(totalPrice),
+                    products:JSON.parse(totalProducts),
                 }
                 localStorage.setItem('customerData', JSON.stringify(client))
                 localStorage.setItem('productData', JSON.stringify(product))      
