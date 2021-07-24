@@ -45,12 +45,12 @@ export default function Submit() {
     useEffect(() => {
         let totalProducts = localStorage.getItem('totalProducts')
         let totalPrice = localStorage.getItem('totalPrice')
-        let totalQty = localStorage.getItem('totalQty')
+        let totalQty = localStorage.getItem('totalQuantity')
         if(totalPrice !== null && totalProducts !== null){
 
             totalPrice = JSON.parse(totalPrice)
             totalProducts = JSON.parse(totalProducts)
-            totalQty = JSON.parse(totalQuantity)
+            totalQty = JSON.parse(totalQty)
 
             setPrice(totalPrice)
             setProduct(totalProducts)
