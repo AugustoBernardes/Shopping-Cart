@@ -18,7 +18,7 @@ export default function Basket(props){
             totalProducts.push(item.name),
             qtyTotal.push(item.qty)
         ))
-        localStorage.setItem('totalQty', JSON.stringify(qtyTotal))
+        localStorage.setItem('totalQuantity', JSON.stringify(qtyTotal))
         localStorage.setItem('totalProducts', JSON.stringify(totalProducts))
         localStorage.setItem('totalPrice', JSON.stringify(totalPrice))
         history.push('/submit')
