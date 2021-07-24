@@ -50,7 +50,7 @@ export default function Submit() {
 
             totalPrice = JSON.parse(totalPrice)
             totalProducts = JSON.parse(totalProducts)
-            totalQty = JSON.parse(totalQty)
+            totalQty = JSON.parse(totalQuantity)
 
             setPrice(totalPrice)
             setProduct(totalProducts)
