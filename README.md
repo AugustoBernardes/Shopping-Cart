@@ -11,7 +11,11 @@ To check the app just follow the [link](https://my-shopping-carts.netlify.app)
 
  To start this application fist you need to have Node.js [link](https://nodejs.org/en/)
 
-```console
+```bash
+  # Clone this repository
+  $ git clone https://github.com/AugustoBernardes/Shopping-Cart
+
+  # Install the dependency
   npm install react-router-dom
 ```
 
